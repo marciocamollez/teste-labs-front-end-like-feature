@@ -1,0 +1,85 @@
+header{
+    width: 100%;
+    display: flex;
+    background-color: #5a2d82;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #FFF;
+}
+.flexheader{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 2;
+}
+.logo{
+    flex: 1;
+}
+.logo h1{
+    font-size: 2rem;
+}
+.logo h1 a{
+    color: #FFF;
+    text-decoration: none;
+}
+.menu--links{
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+    gap: 1rem;
+
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.menu--links a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.menu--links li{
+    display: flex;
+    align-items: center;
+}
+.menu--links li img{
+    height: 20px;
+    margin-right: 0.5rem;
+}
+.menu--busca{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+.menu--busca img{
+    position: absolute;
+    z-index: 99;
+    top: 15px;
+    left: 10px;
+}
+.menu--busca input{
+    display: flex;
+    flex: 1;    
+    justify-content: flex-end;
+    padding: 1rem 1rem 1rem 3rem;
+    border: none;
+}
+
+@media screen and (max-width: 767px){
+    .flexheader{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 350px){
+    .menu--links{
+        flex-direction: column;
+    }
+    .menu--busca input{
+        width: 100%;
+    }
+}

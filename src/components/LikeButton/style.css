@@ -1,0 +1,20 @@
+.likebutton{
+    position: absolute;
+    top: 0;
+    left: 5px;
+    background: #000;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 51% 100%, 49% 100%, 0 79%);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.bt-like {
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+}
+.like-button {
+    fill: #FFF;
+}
+.liked{
+    fill: red;
+}
